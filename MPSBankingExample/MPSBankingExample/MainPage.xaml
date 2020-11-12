@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MPSBankingExample.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="FNB" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry x:Name="DepositAmountEntry" Placeholder="Enter amount" Keyboard="Numeric" />
+        <Entry x:Name="DepositReasonEntry" Placeholder="enter reason" />
+        <Button x:Name="DepositButton" Text="Deposit" Clicked="DepositButton_Clicked" />
+
+        <Entry x:Name="WidrawAmountEntry" Placeholder="Enter amount" Keyboard="Numeric" />
+        <Entry x:Name="WidrawReasonEntry" Placeholder="enter reason" />
+        <Button x:Name="WidrawButton" Text="Widraw" Clicked="WidrawtButton_Clicked" />
+        <Button x:Name="TransacionButton" Text="Transaction" Clicked="TransactionButton_Clicked" />
+        <Label x:Name="DisplayTransactionHistory"/>
+
+
+    </StackLayout>
+
+
+</ContentPage>
